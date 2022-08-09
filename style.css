@@ -1,23 +1,28 @@
 *{
     margin: 0%;
     padding: 0%;
+   
 }
 
-
+body{
+    background-color: blueviolet;
+}
 
 main{
     display: flex;
     justify-items: center;
     margin: 0%;
     width: 100%;
+    height: 15vh;
+    background-color: blueviolet;
 }
 
 
 .carrusel-container{
     width: 100%;
     color: rgb(0, 0, 0);
-    height: 5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
     justify-content: space-between;
@@ -26,10 +31,20 @@ main{
     background-repeat:repeat;
 
 }
+.carrusel-containerEvents{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
 
 .contenedorP{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 
 }
 
@@ -38,15 +53,22 @@ main{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    height: 50%;
-    width: 100;
+    height: 5vh;
+    width: 80% !important;
     margin: 0%;
     padding: 0%;
 
     }
 
+    #contenedorTarjetas{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-content: center !important;
+        justify-content: center !important;
+    }
+
     body{
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuN8J9pPr6x2qBqGTO1n9OVH0n55Huib4znxcXbpCyBzwXH0HkKIgp1zNI_Yb-OE0nwSk&usqp=CAU);
+        background-image: url(https://i.pinimg.com/236x/85/25/88/85258810cc7c04b6365f72e773d0d03c.jpg);
         background-repeat: round;
         width: 100%;
         height: 100%;
@@ -59,6 +81,8 @@ main{
 .formulario{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1rem;
@@ -68,7 +92,7 @@ main{
 #tarjeta{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: flex-end;
@@ -88,6 +112,11 @@ h5{
     display: flex;
    justify-content: center;
 }
+
+.py-3{
+    padding-top: 0% !important;
+}
+
 p{
     display: flex;
     justify-items: center;
@@ -106,11 +135,14 @@ p{
 }
 
 .formcontact{
-    height: 20rem;
-    width: 25rem;
+    height: 60vh;
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
-    flex-direction: column;
     justify-self: center;
     margin-left: 26.5rem;
     margin-bottom: 4.5rem;
@@ -134,7 +166,9 @@ th{
     gap: 1rem ;
     margin-top: 0;
 }
-
+tbody{
+    background-color: #f8f9fa;
+}
 thead{
     background-color: #23a6d5;
 }
@@ -142,8 +176,9 @@ thead{
 footer{
     display: flex;
     background-color: black;
-    width: 100%;
+    width: 100% !important;
     color:white;
+    position:absolute !important;
     
 }
 
@@ -154,3 +189,21 @@ footer{
     align-content: center;
     margin-top: 2rem;
 }
+
+#footerContact{
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+@media (min-width: 576px){.container{
+    max-width: 100%!important;
+   
+}}
+
+@media (min-width: 1400px){.container{
+    max-width: 100%!important;
+}}
+

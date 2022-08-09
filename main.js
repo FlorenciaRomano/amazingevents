@@ -22,7 +22,7 @@ if (unArray.length > 0){
 for(let i = 0; i < unArray.length; i++){ //Realizo un bucle para que recorra todo el array y lo impima, cuando termina todo el largo del array se detiene.
     
 templateTarjeta += 
-`<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem; height: 25rem;">
+`<div class="card shadow p-3 mb-5 bg-white rounded "  style="width: 18rem; height: 25rem;">
 <img src= ${unArray[i].image} style="height: 8.5rem"  class="card-img-top" alt="Cinema">
 <div class="card-body ">
   <h5 class="card-title">${unArray[i].name}</h5>
